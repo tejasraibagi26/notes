@@ -1,0 +1,73 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+label,
+legend,
+input,
+button,
+textarea,
+select,
+option,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+pre,
+code,
+address,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: white;
+  --input-bg: whitesmoke;
+  --input-text: black;
+  --btn-color: #1d71f2;
+  --btn-text: white;
+  --btn-hover-color: #1c9cf6;
+  --text: black;
+  --text-muted: #999;
+  --card: whitesmoke;
+}
+
+[data-theme="dark"] {
+  --bg: black;
+  --input-bg: #222;
+  --input-text: white;
+  --btn-color: #222;
+  --btn-text: white;
+  --btn-hover-color: #1c9cf6;
+  --text: white;
+  --text-mute: #999;
+  --card: #222;
+}
+
+body {
+  background: var(--bg);
+  font-family: "Helvetica Neue", sans-serif;
+  color: var(--input-text);
+  transition: all 0.1s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+}

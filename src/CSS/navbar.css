@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  height: 50px;
+  width: 95vw;
+  margin: 0;
+  position: fixed;
+  margin-top: 1rem;
+}
+nav .navbar {
+  min-width: 100%;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+  margin: 0;
+}
+
+nav .navbar .navbar-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .navbar .navbar-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .navbar .navbar-links ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav .navbar .navbar-links ul li .login {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  transition: all 0.1s ease-in-out;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+nav .navbar .navbar-links ul li .login:hover {
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 6px;
+}
+
+nav .navbar .navbar-links ul li .logout {
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 0.1s ease-in-out;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+nav .navbar .navbar-links ul li .logout:hover {
+  background-color: tomato;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+nav .navbar .navbar-links ul li .profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ham {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    background-color: var(--card);
+  }
+  nav .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  nav .navbar .navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  nav .navbar .navbar-links ul {
+    display: none;
+    height: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 0.2s ease-in-out;
+  }
+  nav .navbar .navbar-links ul li {
+    margin: 10px;
+  }
+  nav .navbar .navbar-links ul li .logout {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  nav .navbar .navbar-links ul li .login {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+  .ham {
+    display: flex !important;
+  }
+}
+
+.show {
+  display: flex !important;
+  height: auto !important;
+}
